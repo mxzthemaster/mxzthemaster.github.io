@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MXZcompany | Necesitas un sitio web?</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <script>
+        posicionarMenu();
+
+        $(window).scroll(function () {
+            posicionarMenu();
+        });
+
+        function posicionarMenu() {
+            var altura_del_header = $('.top-bar').outerHeight(true);
+            var altura_del_menu = $('.nv2').outerHeight(true);
+
+            if ($(window).scrollTop() >= altura_del_header) {
+                $('.nv2').addClass('fixed');
+                $('.contenido').css('margin-top', (altura_del_menu) + 'px');
+                $('.nv2').css('height', '70');
+                $('.nv2').css('color', 'green');
+            } else {
+                $('.nv2').removeClass('fixed');
+                $('.contenido').css('margin-top', '0');
+            }
+        }
+
+    </script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Navbar 1-->
+        <nav class="navbar navbar-expand-lg navbar-dark top-bar ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+
+            </div>
+        </nav>
+        <!--/.Navbar 1-->
+
+        <!--Navbar 2-->
+        <nav class="nv2 mb-1 navbar-expand-lg navbar-dark header-main">
+            <div class="row nv2-r" style="margin:0px;">
+                <div class="col-12 col-sm-1 col-md-4 bardisap">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="logo" style="margin-top:-20px; max-width:90px;" width="100%;">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-11 col-md-8">
+                    <div class="collapse navbar-collapse naa" id="navbarSupportedContent-333">
+                        <ul class="navbar-nav ml-auto ulbarra">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar 2-->
+
+        <!-- parrallax -->
+        <div class="parallax">
+            <div class="text-center">
+
+                <h2>Bienvenido a mxzcompany.com</h2>
+
+                <p>necesitas un sitio web.</p>
+            </div>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <!-- Servicios -->
+        <section class="mb-5">
+            <div class="container">
+                <h2 class="titulo">Servicios</h2>
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <img class="imgvectorial mb-3" src="img/ilustracion1.svg" alt="sitio web">
+                        <h3 class="nombre">Sitios Web</h3>
+                        <p>Tenemos los mejores diseños, sitios innovadores y tencologias modernas.</p>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <img class="imgvectorial mb-3" src="img/ilustracion4.svg" alt="aplicaciones moviles">
+                        <h3 class="nombre">App Movil</h3>
+                        <p>Aplicaciones para IOS, Android y Hibridas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Post -->
+        <section class="mb-5">
+
+        </section>
+
+        <!-- Equipo -->
+        <section class="mb-5">
+            <div class="container">
+                <h2 class="titulo">Equipo</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="row text-center">
+                            <div class="col fotoequipo">
+                                <img src="img/miguel.jpg" width="200px" height="200px;" alt=""><br />
+                                <p class="nombre">Miguel Andrades</p>
+                                <p>Programador Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row text-center">
+                            <div class="col fotoequipo">
+                                <img src="img/IMG-20191227-WA0000.jpg" width="200px" height="200px;" alt=""><br />
+                                <p class="nombre">Monica Navas</p>
+                                <p>Diseñadora grafica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row text-center">
+                            <div class="col fotoequipo">
+                                <img src="img/juan.jpg" width="200px" height="200px;" alt=""><br />
+                                <p class="nombre">Juan Marchant</p>
+                                <p>Programador Movil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- contacto -->
+        <section class="mb-5">
+            <div class="container">
+                <h2 class="titulo">Contacto</h2>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Su Nombre</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Su Email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Asunto</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Su Mensaje</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-black"
+                                onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>San Miguel, Santiago, Chile</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+569 3365 7070</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>miguel@mxzcompany.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- nosotros -->
+        <section class="mb-5">
+            <div class="container">
+                <h2 class="titulo">Nosotros</h2>
+                <span class="spancontent">
+                    Somos una empresa de sociedades informaticas donde nos reunimos profesionales de distintas areas de
+                    informatica tales como desarrolladores web, programadores movil, soporte, redes y diseñadores.
+                </span>
+            </div>
+        </section>
+
+        <!-- contacto -->
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¿Porque nosotros <b class="sig">?</b></h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>P</span>rofesionales</h3>
+                    <p>Todos los integrantes de MXZcompany son profesionales acreditados y muchos de nosotros con mas de
+                        un titulo, nosotros siempre buscamos mejorar dia a dia para entregar a nuestros clientes lo
+                        mejor de lo mejor.</p>
+                    <h3><span>C</span>alidad</h3>
+                    <p>Todo lo que ofrecemos tiene una garantia de calidad, siempre le entregaremos un trabajo completo
+                        y sin fallas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class=".row galeria-port">
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/responsive1.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/pc1.png" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/responsive2.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/pc2.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/responsive3.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/pc3.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/movil1.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="col imagen-port">
+                            <img src="img/portafolio/movil3.PNG" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/logo.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientes contenedor">
+            <h2 class="titulo">Que dicen nuestros clientes</h2>
+            <div class="cards text-center">
+                <div class="card">
+                    <img src="img/face1.jpg" alt="angelo">
+                    <div class="contenido-texto-card">
+                        <h4>Angelo Ibanez</h4>
+                        <p>'Estoy muy contento con el trabajo, su web trajo mas visibilidad a mi empresa'</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face2.jpg" alt="javier">
+                    <div class="contenido-texto-card">
+                        <h4>Javier Rojas</h4>
+                        <p>'Fue un placer tener a este equipo trabando en mi plataforma'</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-services">
+            <div class="contenedor">
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer container">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>+569 4501 8663</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>miguel@mxzcompany.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Locación</h4>
+                <p>Oficina principal Domingo Santa Maria 914, Quirihue, Ñuble</p>
+                <p>Oficina San Miguel, Santiago, RM</p>
+            </div>
+        </div>
+        <h2 class="copyrigth text-center">&copy; MXZcompany 2020 | <b class="white-text">Miguel Andrades</b></h2>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
+</body>
+
+</html>
