@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MXZcompany | Contacto</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logos.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
@@ -68,7 +68,7 @@
             <div class="row nv2-r" style="margin:0px;">
                 <div class="col-12 col-sm-1 col-md-4 bardisap">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="logo" style="margin-top:-20px; max-width:90px;" width="100%;">
+                        <img src="img/logo.png" class="logo" alt="logo" width="100%;">
                     </a>
                 </div>
                 <div class="col-12 col-sm-11 col-md-8">
@@ -101,7 +101,7 @@
 
                 <h2>Bienvenido a mxzcompany.com</h2>
 
-                <p>necesitas un sitio web.</p>
+                <p>Necesitas un sitio web?</p>
             </div>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -124,88 +124,28 @@
             <div class="container">
                 <h2 class="titulo">Contacto</h2>
 
-                <div class="row">
+                <div class="row justify-content-center">
 
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form class="md-form" action="mail.php" method="post" style="color: #757575;">
 
-                            <!--Grid row-->
-                            <div class="row">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        <label for="name" class="">Su Nombre</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
+                            <input type="email" class="form-control" placeholder="Correo" name="correo"
+                                required>
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        <label for="email" class="">Su Email</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
+                            <input type="text" class="form-control" placeholder="Telefono" name="telefono"
+                                required>
 
-                            </div>
-                            <!--Grid row-->
+                            <textarea class="form-control md-textarea" id="textarea"
+                                placeholder="Motivo de su consulta" name="mensaje" required></textarea>
 
-                            <!--Grid row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control">
-                                        <label for="subject" class="">Asunto</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid row-->
-
-                            <!--Grid row-->
-                            <div class="row">
-
-                                <!--Grid column-->
-                                <div class="col-md-12">
-
-                                    <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2"
-                                            class="form-control md-textarea"></textarea>
-                                        <label for="message">Su Mensaje</label>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!--Grid row-->
+                                <button
+                                class="btn btn-outline-default btn-rounded btn-block my-4 waves-effect z-depth-0"
+                                type="submit">Enviar</button>
 
                         </form>
-
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-black"
-                                onclick="document.getElementById('contact-form').submit();">Enviar</a>
-                        </div>
-                        <div class="status"></div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-3 text-center">
-                        <ul class="list-unstyled mb-0">
-                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                <p>San Miguel, Santiago, Chile</p>
-                            </li>
-
-                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                <p>+569 3365 7070</p>
-                            </li>
-
-                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p>miguel@mxzcompany.com</p>
-                            </li>
-                        </ul>
                     </div>
                     <!--Grid column-->
 
@@ -225,15 +165,15 @@
         <div class="contenedor-footer container">
             <div class="content-foo">
                 <h4>Telefono</h4>
-                <p>+569 4501 8663</p>
+                <p>+569 3365 7070</p>
             </div>
             <div class="content-foo">
                 <h4>Email</h4>
                 <p>miguel@mxzcompany.com</p>
             </div>
             <div class="content-foo">
-                <h4>Locación</h4>
-                <p>Oficina principal Domingo Santa Maria 914, Quirihue, Ñuble</p>
+                <h4>Locacion</h4>
+                <p>Oficina principal Domingo Santa Maria 914, Quirihue, ñuble</p>
                 <p>Oficina San Miguel, Santiago, RM</p>
             </div>
         </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MXZcompany | Necesitas un sitio web?</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logos.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
@@ -36,7 +36,7 @@
             if ($(window).scrollTop() >= altura_del_header) {
                 $('.nv2').addClass('fixed');
                 $('.contenido').css('margin-top', (altura_del_menu) + 'px');
-                $('.nv2').css('height', '70');
+                $('.nv2').css('height', '90');
                 $('.nv2').css('color', 'green');
             } else {
                 $('.nv2').removeClass('fixed');
@@ -66,12 +66,12 @@
         <!--Navbar 2-->
         <nav class="nv2 mb-1 navbar-expand-lg navbar-dark header-main">
             <div class="row nv2-r" style="margin:0px;">
-                <div class="col-12 col-sm-1 col-md-4 bardisap">
+                <div class="col-12 col-sm-4 col-md-4 bardisap">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="logo" style="margin-top:-20px; max-width:90px;" width="100%;">
+                        <img src="img/logos.png" class="logo" alt="logo">
                     </a>
                 </div>
-                <div class="col-12 col-sm-11 col-md-8">
+                <div class="col-12 col-sm-8 col-md-8">
                     <div class="collapse navbar-collapse naa" id="navbarSupportedContent-333">
                         <ul class="navbar-nav ml-auto ulbarra">
                             <li class="nav-item active">
@@ -101,7 +101,7 @@
 
                 <h2>Bienvenido a mxzcompany.com</h2>
 
-                <p>necesitas un sitio web.</p>
+                <p>Necesitas un sitio web?</p>
             </div>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -118,13 +118,27 @@
             <div class="container">
                 <h2 class="titulo">Servicios</h2>
                 <div class="row">
-                    <div class="col-sm-6 text-center">
-                        <img class="imgvectorial mb-3" src="img/ilustracion1.svg" alt="sitio web">
+                    <div class="col-sm-4 text-center">
+                        <div class="imgvectorial">
+                            <img class="mb-3" src="img/web.png" width="100%" alt="sitio web">
+                        </div>
+                        
                         <h3 class="nombre">Sitios Web</h3>
-                        <p>Tenemos los mejores diseños, sitios innovadores y tencologias modernas.</p>
+                        <p>Sitios innovadores y tecnologias modernas.</p>
                     </div>
-                    <div class="col-sm-6 text-center">
-                        <img class="imgvectorial mb-3" src="img/ilustracion4.svg" alt="aplicaciones moviles">
+                    <div class="col-sm-4 text-center">
+                        <div class="imgvectorial">
+                            <img class="mb-3" src="img/des.png" width="100%" alt="sitio web">
+                        </div>
+                        
+                        <h3 class="nombre">Diseño Grafico</h3>
+                        <p>Tenemos los mejores diseños para ti.</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="imgvectorial">
+                            <img class="mb-3" src="img/mov.png" width="80%" alt="aplicaciones moviles">
+                        </div>
+                        
                         <h3 class="nombre">App Movil</h3>
                         <p>Aplicaciones para IOS, Android y Hibridas.</p>
                     </div>
@@ -149,6 +163,10 @@
                                 <img src="img/miguel.jpg" width="200px" height="200px;" alt=""><br />
                                 <p class="nombre">Miguel Andrades</p>
                                 <p>Programador Web</p>
+                                <a href="portafolioMiguel.html">
+                                    <div class="btn btn-float btn-lime black-text">ver Portafolio</div>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -167,6 +185,7 @@
                                 <img src="img/juan.jpg" width="200px" height="200px;" alt=""><br />
                                 <p class="nombre">Juan Marchant</p>
                                 <p>Programador Movil</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -180,88 +199,28 @@
             <div class="container">
                 <h2 class="titulo">Contacto</h2>
 
-                <div class="row">
+                <div class="row justify-content-center">
 
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form class="md-form" action="mail.php" method="post" style="color: #757575;">
 
-                            <!--Grid row-->
-                            <div class="row">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        <label for="name" class="">Su Nombre</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
+                            <input type="email" class="form-control" placeholder="Correo" name="correo"
+                                required>
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        <label for="email" class="">Su Email</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
+                            <input type="text" class="form-control" placeholder="Telefono" name="telefono"
+                                required>
 
-                            </div>
-                            <!--Grid row-->
+                            <textarea class="form-control md-textarea" id="textarea"
+                                placeholder="Motivo de su consulta" name="mensaje" required></textarea>
 
-                            <!--Grid row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control">
-                                        <label for="subject" class="">Asunto</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid row-->
-
-                            <!--Grid row-->
-                            <div class="row">
-
-                                <!--Grid column-->
-                                <div class="col-md-12">
-
-                                    <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2"
-                                            class="form-control md-textarea"></textarea>
-                                        <label for="message">Su Mensaje</label>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!--Grid row-->
+                                <button
+                                class="btn btn-outline-default btn-rounded btn-block my-4 waves-effect z-depth-0"
+                                type="submit">Enviar</button>
 
                         </form>
-
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-black"
-                                onclick="document.getElementById('contact-form').submit();">Enviar</a>
-                        </div>
-                        <div class="status"></div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-3 text-center">
-                        <ul class="list-unstyled mb-0">
-                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                <p>San Miguel, Santiago, Chile</p>
-                            </li>
-
-                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                <p>+569 3365 7070</p>
-                            </li>
-
-                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p>miguel@mxzcompany.com</p>
-                            </li>
-                        </ul>
                     </div>
                     <!--Grid column-->
 
@@ -300,76 +259,76 @@
 
         <section class="portafolio">
             <div class="contenedor">
-                <h2 class="titulo">Portafolio</h2>
+                <h2 class="titulo">Portafolio Web</h2>
                 <div class=".row galeria-port">
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/responsive1.PNG" alt="">
+                            <img src="img/portafolio/pc1.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/pc1.png" alt="">
+                            <img src="img/portafolio/pc2.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/responsive2.PNG" alt="">
+                            <img src="img/portafolio/pc3.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/pc2.PNG" alt="">
+                            <img src="img/portafolio/pc4.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/responsive3.PNG" alt="">
+                            <img src="img/portafolio/pc6.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/pc3.PNG" alt="">
+                            <img src="img/portafolio/pc8.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/movil1.PNG" alt="">
+                            <img src="img/portafolio/pc10.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="col imagen-port">
-                            <img src="img/portafolio/movil3.PNG" alt="">
+                            <img src="img/portafolio/pc4.png" class="img-fluid" alt="">
                             <div class="hover-galeria">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                                 <p>Nuestro trabajo</p>
                             </div>
                         </div>
@@ -382,17 +341,17 @@
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards text-center">
                 <div class="card">
-                    <img src="img/face1.jpg" alt="angelo">
+                    <img src="img/angelo.jpg" alt="angelo">
                     <div class="contenido-texto-card">
                         <h4>Angelo Ibanez</h4>
                         <p>'Estoy muy contento con el trabajo, su web trajo mas visibilidad a mi empresa'</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/face2.jpg" alt="javier">
+                    <img src="https://okdiario.com/img/2018/09/19/como-colocarse-una-bufanda-para-hombre-655x368.jpg" alt="javier">
                     <div class="contenido-texto-card">
                         <h4>Javier Rojas</h4>
-                        <p>'Fue un placer tener a este equipo trabando en mi plataforma'</p>
+                        <p>'Fue un placer tener a este equipo trabajando en mi plataforma'</p>
                     </div>
                 </div>
             </div>
@@ -409,7 +368,7 @@
         <div class="contenedor-footer container">
             <div class="content-foo">
                 <h4>Telefono</h4>
-                <p>+569 4501 8663</p>
+                <p>+569 3365 7070</p>
             </div>
             <div class="content-foo">
                 <h4>Email</h4>

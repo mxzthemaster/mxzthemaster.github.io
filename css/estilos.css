@@ -45,6 +45,10 @@ body {
     margin-bottom: 60px;
 }
 
+.logo{
+    margin-top:-20px; 
+    max-width:90px;
+}
 /* Header */
 
 header {
@@ -105,7 +109,9 @@ main .sobre-nosotros{
 .contenido-textos h3{
     margin-bottom: 15px;
 }
-
+.h1-responsive{
+    font-size: 450% !important;
+}
 .contenido-textos h3 span{
     background: #07e619;
     color: #fff;
@@ -162,7 +168,7 @@ main .sobre-nosotros{
 
 .imagen-port > img{
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     display: block;
     
@@ -306,8 +312,8 @@ footer{
 }
 
 .imgvectorial{
-    width:90%;
-    height: 300px;
+    width:100%;
+    height: 240px;
 }
 .fotoequipo img{
     border-radius:50%;
@@ -316,7 +322,7 @@ footer{
     padding: 5px;
 }
 .nombre{
-    font-family: 'Transformers_AEC' !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:40px;
 }
 label{
@@ -327,7 +333,8 @@ label{
 }
 .cajamasservicios{
     height: 200px;
-    margin:5px;
+    margin:0px;
+    margin-bottom:5px;
     background-color: #01A44F;
     text-align: center;
     padding-top:50px;
@@ -336,155 +343,25 @@ label{
     opacity: 0.5;
     
 }
-
+.card-deck{
+    margin:0px !important;
+    width: 100%;
+}
+.card-title{
+    height: 80px;
+}
 .service{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media screen and (max-width:900px){
-    header{
-        background-position: center;
-    }
-
-    .contenedor-sobre-nosotros{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sobre-nosotros .contenido-textos{
-        width: 90%;
-    }
-
-    .imagen-about-us{
-        width: 90%;
-    }
-
-    /* Galeria */
-
-    .imagen-port{
-        width: 44%;
-    }
-
-    /* Clientes */
-
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards .card{
-        width: 90%;
-    }
-
-    .cards .card:first-child{
-        margin-bottom: 30px;
-    }
-
-    /* servicios */
-
-    .servicio-cont{
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .servicio-ind{
-        width: 100%;
-        text-align: center;
-    }
-
-    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-        margin-bottom: 60px;
-    }
-
-    .servicio-ind img{
-        width: 90%;
-    }
-    
-    .naa{ 
-        z-index:9999999;width:100%; 
-        background:rgba(10, 1, 1, 0.938); 
-        color:#01A44F !important; 
-        text-align:center;
-        font-family: 'Transformers_AEC' !important;
-    }
+.bgweb{
+    background-color: rgb(236, 234, 234);
+    padding: 7px;
+    width: 100%;
+    margin:0px !important;
 }
-
-@media screen and (max-width:500px){
-    nav{
-        text-align: center;
-        padding: 30px 0 0 0;
-    }
-
-    nav > a{
-        margin-right: 5px;
-    }
-
-    .textos-header h1{
-        font-size: 35px;
-    }
-
-    .textos-header h2{
-        font-size: 20px;
-    }
-
-    /* ABOUT US */
-
-    .imagen-about-us{
-        margin-bottom: 60px;
-        width: 99%;
-    }
-
-    .sobre-nosotros .contenido-textos{
-        width: 95%;
-    }
-
-    /* Galeria */
-
-    .imagen-port{
-        width: 95%;
-    }
-
-    /* Clients */
-
-    .cards .card{
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cards .card img{
-        width: 90px;
-        height: 90px;
-    }
-
-    /* Footer */
-
-    .contenedor-footer{
-        flex-direction: column;
-        border: none;
-    }
-
-    .content-foo{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .content-foo h4{
-        border: none;
-    }
-
-    .content-foo p{
-        color: #ccc;
-        border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
-    }
-
-    .titulo-final{
-        font-size: 20px;
-    }
+.imgweb:hover{
+    border: 1px solid black;
 }
 
 
@@ -569,6 +446,52 @@ label{
     background-attachment: fixed;
    
 }
+.caja{
+    margin:0px !important;
+}
+
+.des{
+    position: absolute;
+    z-index:999999;
+    color: white;
+    margin-top: 200px;
+    font-size: 45px !important;
+}
+.cajaletra{
+    position: absolute;
+    left:10px;
+}
+.cajasobremi{
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cajamisconocimientos{
+    width: 100%;
+    height: auto;
+    background-color: rgb(204, 200, 193);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cajamisweb{
+    width: 100%;
+    height: auto;
+    background-color: rgb(22, 193, 223);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parallax2{
+    width:100%;
+    margin-top:-100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    background: #000000;
+     background-size: cover;
+    background-attachment: fixed;
+   
+}
 .parallax h2{
     font-size:6vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -606,3 +529,186 @@ p {
     height: 60px;
     border-radius:50% !important;
 }
+.md-form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-control{
+    padding: 5px !important;
+}
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .h1-responsive{
+        font-size: 250% !important;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+    
+    .naa{ 
+        z-index:9999999;width:100%; 
+        background:rgba(10, 1, 1, 0.938); 
+        color:#01A44F !important; 
+        text-align:center;
+        font-family: 'Transformers_AEC' !important;
+    }
+}
+
+@media screen and (max-width:500px){
+    .parallax2{
+        width:100%;
+        margin-top:-100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display:flex;
+        justify-content: center;
+        align-items: center;    
+        background: #000000;
+         background-size: cover;
+        background-attachment: fixed;
+       
+    }
+    .h1-responsive{
+        font-size: 150% !important;
+    }
+    .logo{
+        margin-top:-60px; 
+        max-width:90px;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+    .des{
+        display:none;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+    .cajaletra{
+        position: absolute;
+        left:10px;
+        top:140px;
+    }
+}
+
